@@ -23,7 +23,9 @@ Usage
 
 ```html
 <script>
-__CHARM = { }
+  __CHARM = {
+    post_end_point: '/contact'
+  }
 </script>
 <script src="charmeur.js" defer async></script>
 ```
@@ -42,7 +44,6 @@ Because of that, please do send pull requests!
 
 Some things to do:
 
-* More configurable (POST endpoint!)
 * Documentation!
 * Demos
 * Mobile/responsive layout

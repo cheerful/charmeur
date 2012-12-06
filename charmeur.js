@@ -82,7 +82,7 @@
     BOX =
       '<span id="CHARM_TEXT"></span>'+
       '<iframe id="CHARM_FORM_TARGET" name="CHARM_FORM_TARGET" src="javascript:void(0)" onload="__CHARM&&__CHARM.iFrameLoaded&&__CHARM.iFrameLoaded()" onerror="__CHARM&&__CHARM.iFrameError&&__CHARM.iFrameError()"></iframe>'+
-      '<form id="CHARM_FORM" target="CHARM_FORM_TARGET" action="https://secure.charmhq.com/feedback" method="POST">'+
+      '<form id="CHARM_FORM" target="CHARM_FORM_TARGET" method="POST">'+
       '<div id="CHARM_YOUR_EMAIL"></div>'+
       '<div id="CHARM_YOUR_COMMENT"></div>'+
       '<textarea id="CHARM_COMMENT" name="content" class="ignore-return-pressed"></textarea>'+
@@ -138,8 +138,6 @@
   function init(){
     tab = document.createElement('a');
     tab.id = "CHARM_TAB";
-    
-    tab.href = "https://secure.charmhq.com/feedback/" + __CHARM.key;
     tab.onclick = function(){ show(); return false };
     document.body.appendChild(tab);
     csstag(STYLE);
@@ -223,8 +221,8 @@
       data('user_agent', navigator.userAgent);
       data('local_time', (new Date).toString());
 
-      if('charm_url' in __CHARM){
-        $('CHARM_FORM').action = __CHARM['charm_url'];
+      if('post_end_point' in __CHARM){
+        $('CHARM_FORM').action = __CHARM['post_end_point'];
       }
 
       setTimeout(function(){
