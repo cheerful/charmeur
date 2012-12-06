@@ -1,4 +1,6 @@
-// (c) 2011-2012 Charm
+// Copyright (c) 2010-2012 Slash7 LLC http://charmhq.com/
+// Copyright (c) 2010-2012 Thomas Fuchs http://mir.aculo.us/
+// License: https://github.com/cheerful/charmeur/blob/master/MIT-LICENSE
 (function(){
   var tab, box, email, shown = false, sending = false, openmsg = null, callbacks = {},
     VENDORS = ['webkit','moz','o','ms'],
