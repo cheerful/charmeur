@@ -11,7 +11,7 @@
     STYLE =
       '@media screen {\n'+
       '#CHARM_TAB { '+RESET+'position:fixed;z-index:999999;left:-10px;cursor:pointer;top:50%;margin-top:-100px;width:40px;height:200px;color:#fff;'+
-        ';background:url(https://secure.charmhq.com/feedback.png);background-size:100% 100%;'+
+        ';background:url(images/feedback.png);background-size:100% 100%;'+
         vendored('transform','translateX(0)') + vendored('transition','all 0.4s') + '}\n'+
       '#CHARM_TAB:hover { '+vendored('transform','translateX(10px)')+' }\n'+
       '#CHARM_TAB.hidden {'+vendored('transform','translateX(-40px)')+'}\n'+
@@ -78,7 +78,7 @@
       '@media print {\n'+
       '#CHARM_TAB, #CHARM_BOX, #CHARM_MESSAGE { display:none !important; }\n'+
       '}\n'+
-      '@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { #CHARM_TAB { background-image:url(https://secure.charmhq.com/feedback2x.png); }}',
+      '@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { #CHARM_TAB { background-image:url(images/feedback2x.png); }}',
     BOX =
       '<span id="CHARM_TEXT"></span>'+
       '<iframe id="CHARM_FORM_TARGET" name="CHARM_FORM_TARGET" src="javascript:void(0)" onload="__CHARM&&__CHARM.iFrameLoaded&&__CHARM.iFrameLoaded()" onerror="__CHARM&&__CHARM.iFrameError&&__CHARM.iFrameError()"></iframe>'+
