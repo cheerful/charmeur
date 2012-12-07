@@ -138,6 +138,7 @@
   function init(){
     tab = document.createElement('a');
     tab.id = "CHARM_TAB";
+    tab.href = __CHARM['url'];
     tab.onclick = function(){ show(); return false };
     document.body.appendChild(tab);
     csstag(STYLE);
@@ -221,9 +222,7 @@
       data('user_agent', navigator.userAgent);
       data('local_time', (new Date).toString());
 
-      if('post_end_point' in __CHARM){
-        $('CHARM_FORM').action = __CHARM['post_end_point'];
-      }
+      $('CHARM_FORM').action = __CHARM['url'];
 
       setTimeout(function(){
         var scrollTop = document.body.scrollTop;
