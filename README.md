@@ -23,14 +23,35 @@ Usage
 
 ```html
 <script>
-__CHARM = { }
+  __CHARM = {
+    url: '/contact'
+  }
 </script>
 <script src="charmeur.js" defer async></script>
 ```
 
+`url` will be used both for `POST` for you to send your messages, and as well as a GET link the user can reach with right-click/open in new tab or as a bookmark when it's useful.
+
+TODO: provide a better explanation above!
 TODO: document manuel invocation
 TODO: document label customization
 TODO: document CSS customization
+
+How to show the popup at page load
+----------------------------------
+
+```html
+<script>
+  __CHARM = {
+    url: '/contact'
+  }
+</script>
+<!-- note - no defer async here -->
+<script src="charmeur.js"></script>
+<script>
+  __CHARM.show();
+</script>
+```
 
 Alpha warning
 -------------
@@ -42,7 +63,6 @@ Because of that, please do send pull requests!
 
 Some things to do:
 
-* More configurable (POST endpoint!)
 * Documentation!
 * Demos
 * Mobile/responsive layout
