@@ -68,4 +68,8 @@ Some things to do:
 * Mobile/responsive layout
 * Write tests
 
+License
+-------
 Charmeur is licensed under the terms of the MIT License.
+The Charm logo (heart-shaped paperclip) is NOT included in this license.
+We recommend that you create your own "tab" images from the provided templates. Go wild!
